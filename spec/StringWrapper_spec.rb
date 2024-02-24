@@ -3,19 +3,22 @@ require 'StringWrapper.rb'
 RSpec.describe StringWrapper do
   describe "#reverse" do
     it "reverses the string" do
-      # Fill in the test
+      str = StringWrapper.new("hello")
+      expect(str.reverse).to eq(olleh)
     end
   end
 
   describe "#upcase" do
     it "converts the string to uppercase" do
-      # Fill in the test
+      str = StringWrapper.new("hello")
+      expect(str.upcase).to eq("HELLO")
     end
   end
 
   describe "#downcase" do
     it "converts the string to lowercase" do
-      # Fill in the test
+      str = StringWrapper.new("HELLO")
+      expect(str.downcase).to eq("hello")
     end
   end
 end
